@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gird Layout Example</title>
+</head>
+<style>
+    header{
+        background-color: rgb(87, 201, 87);
+        padding: 10px;
+        color: white;
+        text-align: center;
+    }
+    section{
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 500px;
+        column-gap: 10px;
+    }
+    footer{
+        background-color: rgb(87, 201, 87);
+        color: white;
+        text-align: center;
+    }
+    footer p{
+        padding: 5px;
+    }
+    .side-bar
+    {
+        background-color: rgb(172, 170, 170);
+    }
+    .main-content
+    {
+        background-color: rgb(172, 170, 170);
+    }
+</style>
+<body>
+    <header>
+         <h1>Grid Layout Example</h1>
+    </header>
+    <section>
+        <div class="side-bar">Sidebar</div>
+        <div class="main-content">Main Content Area</div>
+    </section>
+    <footer>
+        <p><span>&copy;</span>Grid Layout Exercise</p>
+    </footer>
+</body>
+</html>

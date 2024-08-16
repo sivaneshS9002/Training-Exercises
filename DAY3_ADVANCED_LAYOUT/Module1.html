@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout Example</title>
+      <style>
+        header
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        .title-st
+        {
+            text-align: center;
+            background-color: rgb(230, 225, 225);
+            padding: 15px;
+            margin-bottom: 0px;
+        }
+        .nav-bar-container
+        {
+            display: flex;
+            background-color: black;
+            width: 100%;
+             padding: 16px;
+             justify-content: center;
+        }
+        .nav-bar-container a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding-left: 10px;
+            padding-right: 115px;
+        }
+        .flex-items
+        {
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 5px;
+            background-color: green;
+            width: 300px;
+            flex-basis: 30%;
+  
+        }
+        .container-st{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            margin-top: 40px;
+        }
+        footer
+        {
+            background-color:rgb(235, 235, 231) ;
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 10px;
+            text-align: center;
+        }
+      </style>
+</head>
+<body>
+
+      <header>
+           <h1 class="title-st">
+              Flexbox Layout Example
+           </h1> 
+           <div class="nav-bar-container">
+               <a href="/">Home</a>
+               <a href="/">About</a>
+               <a href="/">Services</a>
+               <a href="/">Contact</a>
+           </div>
+       </header>
+       <content class="container-st">
+           <div class="flex-items">Content Box1</div>
+           <div class="flex-items">Content Box2</div>
+           <div class="flex-items">Content Box3</div>
+           <div class="flex-items">Content Box4</div>
+           <div class="flex-items">Content Box5</div>
+           <div class="flex-items">Content Box6</div>
+       </content>
+       <footer>
+        <p><span>&copy;</span>2024 FLEXBOX LAYOUTS Example</p>
+       </footer>
+
+</body>
+</html>

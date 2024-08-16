@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property Examples</title>
+    <style>
+        .title-h1
+        {
+            text-align: center;
+            background-color:rgb(207, 207, 206);
+            padding: 20px;
+            margin-bottom: 0px;
+        }
+        .nav-bar-container
+        {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .nav-bar-container p
+        {
+           display: inline;
+        padding-left: 6px;
+        padding-right: 10px;
+        }
+        .block-elements{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 70px;
+        }
+        .block-elements div
+        {
+           background-color: rgb(76, 187, 76);
+           margin:7px;
+           width: 60%;
+           height: 50px;
+           color: white;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .inline-examples
+        {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        .inline-examples div
+        {
+          height: 30px;
+          width: 230px;
+          color: white;
+          background-color: rgb(18, 148, 192);
+          display: inline;
+          margin: 7px;
+          display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .inlineBlock-elements
+        {
+           display: flex;
+           justify-content: center;
+        }
+      .inlineBlock-elements div
+      {
+        height: 50px;
+        width: 170px;
+        background-color: rgba(240, 148, 10, 0.986);
+        color: white;
+        margin: 7px;
+        display: flex;
+           justify-content: center;
+           align-items: center;
+      }
+      footer
+      {
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        display: flex;justify-content: center; background-color:rgb(207, 207, 206);
+      }
+    </style>
+</head>
+<body>
+       <header>
+              <div class="Webpage-Title-style">
+                 <h1 class="title-h1">DISPLAY PROPERTY EXAMPLES</h1>
+                <div class="nav-bar-container">
+                    <p>Home<p>
+                    <p>About</p>
+                    <p>Services</p>
+                    <p>Contact</p>
+                </div>
+              </div>
+       </header>
+       <content>
+          <div class="block-elements">
+               <div>Block Element 1 (display:block)</div>
+               <div>Block Element 2 (display:block)</div>
+               <div>Block Element 3 (display:block)</div>
+          </div>
+          <div class="inline-examples">
+
+            <div>Inline Element 1</div>
+            <div>Inline Element 2</div>
+            <div>Inline Element 3</div>
+
+          </div>
+
+          <div class="inlineBlock-elements">
+             
+             <div>Inline Block 1</div>
+             <div>Inline Block 2</div>
+             <div>Inline Block 3</div>
+
+          </div>
+       </content>
+       <footer>
+        <p><span>&copy;</span>2020 CSS BASICS REVIEW</p>
+       </footer>
+</body>
+</html>

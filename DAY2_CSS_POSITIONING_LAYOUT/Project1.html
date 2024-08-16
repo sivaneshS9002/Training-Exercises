@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BASICS REVIEW</title>
+    <style>
+        .nav-name:hover
+        {
+          text-decoration: underline 2px solid whitesmoke;
+        }
+        .nav-name{
+           color: white;
+        }
+        .nav-name:active
+        {
+            color: rgb(179, 17, 143);
+        }
+      .head-content
+      {
+        background-color:rgb(235, 235, 231);
+        color: black;
+        padding: 10px;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      header:hover{
+        cursor: pointer;
+      }
+      .nav-bar
+      {
+        display: flex;
+        background-color: black;
+        color: wheat;
+        justify-content: space-around;
+      }
+      .sub-section1
+      {
+        background-color: rgb(170, 165, 165);
+        height: 155px;
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 20px;
+      }
+      .sub-section2
+      {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+      }
+      .content-box
+      {
+        border:2px solid rgb(150, 145, 145);
+        padding-left: 40px;
+        padding-right: 40px;
+        background-color: rgb(255, 255, 255);
+      }
+      .content-box:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        cursor: pointer;
+      }
+      .sub-section3
+      {
+        background-color: rgb(197, 194, 194);
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+      .sub3-content
+      {
+      max-width: fit-content;
+      max-height: fit-content;
+      margin-left: 10px;
+      }
+      ul,li{
+        margin-bottom: 0px;
+      }
+      footer{
+        margin-top: 20px;
+        display:flex;
+        justify-content: center;
+        background-color:rgb(207, 207, 206);
+      }
+      a{
+        text-decoration: none;
+        color:wheat;
+      }
+      a:visited
+      {
+        color: grey;
+      }
+      input:focus
+      {
+        background-color: rgb(209, 124, 14);
+        color: rgb(219, 16, 16);
+      }
+      .pseudo-class::before
+      {
+        content: url('/Day1_HTML_BASICS/');
+      }
+    </style>
+</head>
+<body>
+    <header>
+         <h1 class="head-content">CSS BASICS REVIEW</h1>
+         <div class="nav-bar">
+            <div style="width: 20%;"></div>
+           <a href="/Day1_HTML_BASICS/"> <p class="nav-name">Home</p></a>
+           <a href="/Day1_HTML_BASICS/"><p class="nav-name">About</p></a>
+           <a href="/Day1_HTML_BASICS/"> <p class="nav-name">Services</p></a>
+           <a href="/Day1_HTML_BASICS/">  <p class="nav-name">Contact</p> </a>
+            <div style="width: 20%;"></div>
+         </div>
+    </header>
+         <div class="main-content-section">
+
+            <div class="sub-section1"> 
+                <h1 style="padding-left: 10px;">Introduction:</h1>
+                <p style="padding-left: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus eos dignissimos laudantium obcaecati harum. Quas provident, qui veniam consequatur, laboriosam tempora quae atque totam omnis maiores, tenetur eligendi molestiae facilis?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, tenetur, quidem consectetur recusandae, fugiat optio dolores quibusdam odio enim ut deserunt. </p>
+            </div>
+
+            <div class="sub-section2">
+                <div class="content-box">
+                    <h1>Box 1:Title</h1>
+                    <p>Content 1</p>
+                    <p>Background Border Margins  <span style="display: block;padding-top: 7px;">Padding</span></p>
+                </div>
+
+                <div class="content-box">
+                    <h1>Box 1:Title</h1>
+                    <p>Content 1</p>
+                    <p>Background Border Margins  <span style="display: block;padding-top: 7px;">Padding</span></p>
+                </div>
+                <div class="content-box">
+                    <h1>Box 1:Title</h1>
+                    <p>Content 1</p>
+                    <p>Background Border Margins  <span style="display: block;padding-top: 7px;">Padding</span></p>
+                </div>
+            </div>
+
+            <div class="sub-section3">
+                 <div class="sub3-content">
+                    <h1 style="margin-bottom: 0px;">Pseudo-Classes Example:</h1>
+                    <ul style="list-style: none;">
+                        <li>sem 1:<span>(hover,active etc...)</span></li>
+                        <li><input type="text" /></li>
+                    </ul>
+                 </div>
+                 <div class="sub3-content">
+                    <h1>Pseudo-Elements Examples:</h1>
+                    <ul style="list-style: none;">
+                        <li> <span style="color: green;" class="pseudo-class"> Before:</span> after applied to the line paragraph <Span style="color: green;">:End</Span></span></li>
+                    </ul>
+                 </div>
+            </div>
+         </div>
+         <footer>
+                <p><span>&copy;</span>2020 CSS BASICS REVIEW</p>
+         </footer>
+</body>
+</html>

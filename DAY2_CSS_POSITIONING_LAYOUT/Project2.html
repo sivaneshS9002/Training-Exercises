@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS PRACTICE</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: rgb(240, 231, 231);
+        }
+        .title-st
+        {
+          background-color: rgb(235, 235, 231);
+          color: black;
+          text-align: center;
+          padding: 5px;
+        }
+        .nav-bars
+        {
+           display: flex;
+           justify-content: center;
+            background-color: black;
+            padding: 10px;
+        }
+        a
+        {
+         padding-left: 20px;
+         padding-right: 20px;
+        }
+        content div{
+            border: none;
+            margin: 30px;
+            padding: 10px;
+            background-color: rgb(122, 124, 124);
+        }
+        .subSection1 *
+        {
+               color: rgb(8, 8, 8);
+        }
+        .subSection2 p{
+           color: rgb(26, 25, 25);
+        }
+ 
+        
+        #subSection4
+        {
+        font-size: 24px;
+        color: red;
+         
+        }
+        /* .attribute-selector [class*="st"]
+        {
+           background-color: aquamarine;
+        } */
+        input[type="text"]
+        {
+            border: 2px solid black;
+        }
+        input
+        {
+            width: 100%;
+        }
+        /* .dec-st p
+        {
+          color: red;
+        } */
+        /* .child-selector-st ul>li{
+            background-color: blueviolet;
+        } */
+        .Adjacent-selector  h1+p
+        {
+          font-family: cursive;
+        }
+        .general-sibling-selector h1 ~ p{
+            background-color: black;
+        }
+        footer{
+            display: flex;justify-content: center;background-color: antiquewhite;
+            background-color:rgb(235, 235, 231) ;
+        }
+    </style>
+</head>
+<body>
+      <header>
+        <div  class="title-st">
+           <h1>CSS SELECTORS PRACTICE</h1>
+        </div>
+        <div class="nav-bars">
+           <a>Home</a>
+           <a>About</a>
+           <a>Services</a>
+           <a>Contact</a>
+          </div>
+      </header>
+      <content>
+        <div class="subSection1">
+            <h3>Universal Selector Example</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad est delectus architecto. 
+                Odit modi delectus consequatur distinctio accusantium vitae dolorum vel quasi perferendis voluptate deleniti,
+                 cum ipsa fuga numquam? Mollitia?</p>
+        </div>
+        <div class="subSection2">
+           <h3>Type Selector Example</h3>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Accusantium molestiae voluptas quo earum in. Eveniet voluptatem excepturi quaerat accusamus! Voluptates, 
+            numquam excepturi! Itaque a soluta, quam tempore ipsum deleniti maxime?
+           </p>
+        </div>
+        <div class="subSection3" style="background-color: yellow;">
+          <h3>Class Selector Example</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique enim libero culpa neque aut pariatur 
+            veritatis corporis rem, quaerat, 
+            temporibus suscipit fugiat qui tenetur aliquid sint blanditiis dolores. Magnam, totam?</p>
+        </div>
+        <div id="subSection4">
+           <h3>ID Selector Example</h3>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At iusto perspiciatis vitae laboriosam. 
+            Eveniet cupiditate iste recusandae aperiam. 
+            Dolorum vitae nemo, aliquam expedita necessitatibus sapiente eaque illo fuga animi quo?</p>
+        </div>
+        <div class="attribute-selector">
+            <h3 class="st">Atrribute Selectors Example</h3>
+             <label for="name" style="display: block;">Type Your Name:</label>
+             <input  type="text"  placeholder="Your Name"/>
+         </div>
+         <div class="dec-st">
+            <h3>Decentant Selector Example</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At iusto perspiciatis vitae laboriosam. 
+             Eveniet cupiditate iste recusandae aperiam. 
+             Dolorum vitae nemo, aliquam expedita necessitatibus sapiente eaque illo fuga animi quo?</p>
+         </div>
+         <div class="child-selector-st">
+            <h3>Child Selector Example</h3>
+             <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+             </ul>
+         </div>
+         <div class="Adjacent-selector">
+            <h3>Adjacent Sibling Selector Example</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At iusto perspiciatis vitae laboriosam. 
+             Eveniet cupiditate iste recusandae aperiam. 
+             Dolorum vitae nemo, aliquam expedita necessitatibus sapiente eaque illo fuga animi quo?</p>
+         </div>
+         <div class="general-sibling-selector">
+            <h3>General sibling  Selector Example</h3>
+             <h2>This is Heading Tag</h2>
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+         </div>
+      </content>
+      <footer>
+        <p><span>&copy;</span>2020 CSS BASICS REVIEW</p>
+       </footer>
+</body>
+</html>
